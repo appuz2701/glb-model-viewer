@@ -13,7 +13,7 @@ const Dashboard = () => {
 
   const deleteModel = async (id) => {
     if (!window.confirm('Are you sure you want to delete this model?')) return;
-    await fetch(`http://localhost:5000/models/${id}`, { method: 'DELETE' });
+    await fetch(`http://localhost:5000/model/${id}`, { method: 'DELETE' });
     fetchModels();
   };
 
